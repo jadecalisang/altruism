@@ -1,0 +1,56 @@
+/**
+* Name: Helena Jade B. Calisang
+* Section: Altruism 
+* Year: 4th year 
+*/
+```
+
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        int input;
+        Scanner Jade = new Scanner(System.in);
+        
+        System.out.print("Input grade:  ");
+        float firstGrade = Jade.nextFloat();
+        
+        System.out.print("Input grade:  ");
+        float secondGrade = Jade.nextFloat();
+        
+        float sum = firstGrade + secondGrade;
+        float ave = sum/2f;
+        
+        System.out.println("Do you want additional point for your grades?");
+        
+        System.out.println(" Enter 1 for Yes");
+        System.out.println("Enter 2 for No");
+         input = Jade.nextInt();
+         
+         switch (input) {
+             
+             case 1: 
+             System.out.println("You choose YES");
+             while (input==1) {
+                 System.out.print("Input grade:  ");
+                 float yourGrade= Jade.nextFloat();
+             }
+             break;
+             
+             case 2:
+             System.out.println("You choose NO");
+             
+             System.out.printf("You average is" + ave);
+             break;
+             
+             default: 
+             System.out.println("PLEASE ANSWER ACCORDINGLY! (1 for Yes or 2 for No)");
+             
+         }
+        
+        
+    }
+}
